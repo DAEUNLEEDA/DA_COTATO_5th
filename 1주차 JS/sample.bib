@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>우와아아앙</title>
+    </head>
+    <body>
+        <h2>흥흥흥</h2>
+        <script type = "text/javascript">
+          
+          function solution(num, k) {
+            var answer = 0;
+            while(true){
+             answer++;
+            if(num<=0){
+                answer = -1;
+                break;
+            }
+       
+            if(num%10=== k){
+                break;
+            }
+            num/=10;
+            }
+            return answer;
+            }
+            var a = prompt();
+            var k = prompt();
+            var b = solution(a, k);  
+            document.write(b);
+
+    </script>
+    
+</body> 
+</html>
